@@ -4,8 +4,7 @@ import { NextResponse } from 'next/server';
 import { useRouter } from 'next/navigation';
 import { Card, Flex, Box, Text} from '@radix-ui/themes';
 import { FaRegTrashCan } from 'react-icons/fa6'
-import { TfiPencil } from "react-icons/tfi";
-
+import Conditional from './Conditional';
 
 
 interface Props {
@@ -37,13 +36,9 @@ const TaskCard = ({id, taskName, completed, dueOn}: Props) => {
                                 <FaRegTrashCan className='fill-current text-white'/>
                             </button>
                         </span>
-                        <span className="mr-3">
-                            <button className="p-3 bg-gray-500 hover:bg-gray-700 hover:cursor-pointer rounded-lg">
-                                <Link href='/tasks/update'>
-                                    <TfiPencil className="fill-current text-white"/>
-                                </Link>
-                            </button>
-                        </span>
+                        {/* <Conditional showWhen={completed}> */}
+                            
+                        {/* </Conditional> */}
                     </Box>
                 </Flex>
             </Card>

@@ -7,6 +7,7 @@ import { getAllTasks } from '../api/apiCalls';
 import TaskCard from '../components/TaskCard';
 
 
+
 const TasksPage = async () => {
   const data = await getAllTasks();
 
