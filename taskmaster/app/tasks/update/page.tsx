@@ -42,9 +42,9 @@ const UpdateTaskPage = () => {
                     setError('An unexpected error occured.');
                 }
             })}>        
-            <input type='text' placeholder="Task Name" className='w-96 p-1 border-solid border-gray-300 border-2 text-black max-w-lg rounded-lg placeholder:text-gray-500'   {...register('taskName')} />
+            <input type='text' placeholder="Task Name: " className='w-96 p-1 border-solid border-gray-300 border-2 text-black max-w-lg rounded-lg placeholder:text-gray-500'   {...register('taskName')} />
             <br />
-            <input type='text' className="w-96 p-1 border-2 border-gray-300 max-w-lg rounded-lg text-gray-500" {...register('dueOn')} />
+            <input type='text' placeholder="Due On: " className="w-96 p-1 border-2 border-gray-300 max-w-lg rounded-lg text-gray-500 placeholder:text-gray-500" {...register('dueOn')} />
             <Controller
                 name="completed"
                 control={control}
