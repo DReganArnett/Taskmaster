@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE `Task` MODIFY `dueOn` VARCHAR(255) NOT NULL;
